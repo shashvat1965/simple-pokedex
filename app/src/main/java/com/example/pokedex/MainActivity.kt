@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             .build()
 
         var pokeApi = retrofit.create(PokeApiService::class.java)
-        val pokemonData = pokeApi.getPokemon()
 
         var call: Call<PokemonPageDetails> = pokeApi.getPokemon()
 
